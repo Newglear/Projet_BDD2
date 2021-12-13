@@ -12,3 +12,12 @@ CREATE table Doctorant (
            REFERENCES personnel(id_personnel)
 );
 ```
+## President table
+```sql
+CREATE TABLE President(ID_President INT PRIMARY KEY,  
+                        Constraint fk_president 
+                            FOREIGN KEY (ID_president) 
+                                REFERENCES scientifique(id_scientifique) ON DELETE CASCADE
+);
+
+```
